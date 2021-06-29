@@ -65,6 +65,20 @@ body {
   border-radius: 0 0 0 100px;
 }
 
+.header {
+  border: 3px green solid;
+  background-image: url(/images/bg-pattern-intro.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-attachment: fixed;
+  background-position: -28.75vw -84.375vw;
+
+  position: static;
+  background-size: fill;
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 1280px) {
   .header-container {
     min-width: 1280px;
@@ -74,5 +88,12 @@ body {
 @media (min-width: 1440px) {
   .header-container {
     min-width: 1440px;
+  }
+}
+
+@media (min-width: 375px) {
+  .header-container {
+    min-width: 375px;
+    height: 37.5625rem;
   }
 }
