@@ -81,13 +81,14 @@ body {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  width: 95%;
   border: 3px red solid;
   position: relative;
 }
 
 .navigation {
-  border: 3px green solid;
-  margin-top: 3.9375vh;
+  border: 3px #008000 solid;
+  margin-top: 2.1375vw;
 }
 .logo {
   font-size: 40px;
