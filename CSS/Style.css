@@ -66,7 +66,6 @@ body {
 }
 
 .header {
-  border: 3px green solid;
   background-image: url(/images/bg-pattern-intro.svg);
   background-repeat: no-repeat;
   z-index: 1;
@@ -74,34 +73,30 @@ body {
   background-position: -28.75vw -84.375vw;
 
   position: relative;
-  background-size: fill;
+
   width: 100%;
   height: 100%;
 }
 
 @media (max-width: 1280px) {
-  .header-container {
-    min-width: 1280px;
-  }
-
   .header {
-    background-position: -38.75vw -104.375vw;
+    background-position: -35.75vh -104.375vw;
   }
 }
 
-@media (min-width: 1440px) {
-  .header-container {
-    min-width: 1440px;
+@media (max-width: 1440px) {
+  .header {
+    background-size: 240vw;
   }
 }
 
 @media (min-width: 375px) and (max-width: 675px) {
   .header-container {
-    min-width: 375px;
     height: 37.5625rem;
   }
   .header {
-    display: none;
-    background-position: -108.75vw -104.375vw;
+    background-position: -80.75vw -75.375vw;
+    background-size: 300vw;
+    border-radius: 0 0 0 100px;
   }
 }
