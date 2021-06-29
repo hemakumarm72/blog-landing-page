@@ -78,15 +78,44 @@ body {
   height: 100%;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  border: 3px red solid;
+  position: relative;
+}
+
+.navigation {
+  border: 3px green solid;
+  margin-top: 3.9375vh;
+}
+.logo {
+  font-size: 40px;
+  font-family: var(--font-overpass);
+  font-weight: 600;
+  font-style: bold;
+  color: var(--White);
+}
+
 @media (max-width: 1280px) {
   .header {
     background-position: -35.75vh -104.375vw;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1280px;
   }
 }
 
 @media (max-width: 1440px) {
   .header {
     background-size: 240vw;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -98,5 +127,16 @@ body {
     background-position: -60.75vw -45.375vw;
     background-size: 300vw;
     border-radius: 0 0 0 100px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 87.5%;
+  }
+  .navigation {
+    margin-top: 3.5625vh;
+  }
+  .logo {
+    font-size: 33px;
   }
 }
