@@ -82,22 +82,16 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   width: 95%;
-  border: 3px red solid;
   position: relative;
 }
 
 .navigation {
   border: 3px #008000 solid;
+  position: absolute;
   margin-top: 2.1375vw;
 }
 .logo {
-  font-size: 40px;
-  font-family: var(--font-overpass);
-  font-weight: 600;
-  font-style: bold;
-  color: var(--White);
 }
-
 @media (max-width: 1280px) {
   .header {
     background-position: -35.75vh -104.375vw;
@@ -138,6 +132,5 @@ body {
     margin-top: 3.5625vh;
   }
   .logo {
-    font-size: 33px;
   }
 }
