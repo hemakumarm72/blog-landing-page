@@ -114,11 +114,12 @@ body {
   }
 }
 
-@media (min-width: 375px) and (max-width: 675px) {
+@media (min-width: 300px) and (max-width: 675px) {
   .header-container {
     height: 37.5625rem;
   }
   .header {
+    background-attachment: fixed;
     background-position: -60.75vw -45.375vw;
     background-size: 300vw;
     border-radius: 0 0 0 100px;
