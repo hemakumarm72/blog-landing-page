@@ -24,6 +24,8 @@
   /* ### Neutral */
 
   --White: hsl(0, 0%, 100%); /*(text)*/
+  --textWhite: hsl(0, 0%, 95%); /*(text)*/
+  --hoverwhite: hsla(0, 0%, 100%, 0.294); /*(text)*/
   --Grayish-blue: hsl(240, 2%, 79%); /*(footer text)*/
   --Very-dark-grayish-blue: hsl(207, 13%, 34%); /* (body copy)*/
   --Very-dark-black-blue: hsl(240, 10%, 16%); /*(footer background)*/
@@ -48,6 +50,7 @@
 html,
 body {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .header-container {
@@ -82,16 +85,54 @@ body {
 .container {
   margin: 0 auto;
   width: 95%;
-  position: relative;
+  border: transparent solid;
 }
 
 .navigation {
-  border: 3px #008000 solid;
-  position: absolute;
+  position: relative;
+
   margin-top: 2.1375vw;
+  font-family: var(--font-overpass);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.logo {
+
+nav {
 }
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  padding: 0 4.125vw 0 0;
+}
+
+nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--Very-dark-blue);
+  font-size: 1vw;
+}
+
+.nav-btn {
+  padding: 1.125vw 2.5625vw;
+  border-radius: 50%;
+  font-size: 1vw;
+  font-weight: 600;
+  color: var(--textWhite);
+  background-color: transparent;
+}
+
+.nav-btn:hover {
+  border-radius: 30px;
+  color: var(--White);
+  background-color: var(--hoverwhite);
+}
+
+/* media quiers*/
 @media (max-width: 1280px) {
   .header {
     /* background-position: -35.75vh -104.375vw; */
@@ -120,8 +161,9 @@ body {
   }
   .header {
     background-attachment: fixed;
-    background-position: -60.75vw -45.375vw;
-    background-size: 300vw;
+
+    background-position: -60.75vw -35.375vw;
+    background-size: 250vw;
     border-radius: 0 0 0 100px;
   }
 

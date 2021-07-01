@@ -17,11 +17,6 @@ var size = function() {
 }
 
 
-
-
-
-
-
 window.document.addEventListener('DOMContentLoaded', size(), false);
 
 // load size
