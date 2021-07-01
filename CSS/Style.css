@@ -132,6 +132,11 @@ nav a:hover {
   background-color: transparent;
 }
 
+.btn-signup {
+  color: var(--Light-red);
+  background-color: var(--White);
+}
+
 .nav-btn:hover {
   color: var(--White);
   background-color: var(--hoverwhite);
