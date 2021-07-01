@@ -92,7 +92,8 @@ body {
   position: relative;
 
   margin-top: 2.1375vw;
-  font-family: var(--font-overpass);
+  font-family: var(--font-ubuntu);
+  font-weight: 300;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -113,13 +114,18 @@ nav li {
 nav a {
   cursor: pointer;
   text-decoration: none;
-  color: var(--Very-dark-blue);
+  color: var(--textWhite);
   font-size: 1vw;
 }
 
+nav a:hover {
+  text-decoration: underline;
+  color: var(--White);
+}
+
 .nav-btn {
+  border-radius: 2vw;
   padding: 1.125vw 2.5625vw;
-  border-radius: 50%;
   font-size: 1vw;
   font-weight: 600;
   color: var(--textWhite);
@@ -127,9 +133,12 @@ nav a {
 }
 
 .nav-btn:hover {
-  border-radius: 30px;
   color: var(--White);
   background-color: var(--hoverwhite);
+}
+
+.arrow-light-span {
+  padding-left: 0.3vw;
 }
 
 /* media quiers*/
