@@ -85,13 +85,11 @@ body {
 .container {
   margin: 0 auto;
   width: 95%;
-  border: transparent solid;
 }
 
 .navigation {
+  padding-top: 2.1375vw;
   position: relative;
-
-  margin-top: 2.1375vw;
   font-family: var(--font-ubuntu);
   font-weight: 300;
   display: flex;
@@ -126,9 +124,6 @@ nav a:hover {
   color: var(--White);
 }
 
-.arrow-light:hover {
-  transform: rotate(180deg);
-}
 nav a:hover .arrow-light {
   transform: rotate(180deg);
 }
