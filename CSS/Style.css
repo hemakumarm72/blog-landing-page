@@ -129,7 +129,7 @@ nav a:hover .arrow-light {
 }
 
 .nav-btn {
-  border-radius: 2vw;
+  border-radius: 2em;
   padding: 1.125vw 2.5625vw;
   font-size: 1vw;
   font-weight: 600;
