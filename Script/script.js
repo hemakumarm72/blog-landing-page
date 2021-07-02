@@ -34,3 +34,8 @@ function myfunction() {
 }
 
 myfunction()
+
+
+document.addEventListener('click', function() {
+   
+})

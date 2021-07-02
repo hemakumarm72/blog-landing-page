@@ -117,10 +117,20 @@ nav a {
   color: var(--textWhite);
   font-size: 1vw;
 }
+.arrow-light {
+  transition: 0.3s ease-in;
+}
 
 nav a:hover {
   text-decoration: underline;
   color: var(--White);
+}
+
+.arrow-light:hover {
+  transform: rotate(180deg);
+}
+nav a:hover .arrow-light {
+  transform: rotate(180deg);
 }
 
 .nav-btn {
