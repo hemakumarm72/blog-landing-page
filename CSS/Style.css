@@ -131,7 +131,9 @@ nav a:hover {
 nav a:hover .arrow-light {
   /* transform: rotate(180deg); */
 }
-
+.arrow-rotator {
+  transform: rotate(180deg);
+}
 .nav-btn {
   border-radius: 2em;
   padding: 1.125vw 2.5625vw;
