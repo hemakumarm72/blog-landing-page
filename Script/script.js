@@ -1,3 +1,5 @@
+//screen revolution set or max containing auto changing values
+
 var size = function() {
   function eventHandler() {
 
@@ -15,11 +17,7 @@ var size = function() {
   }
   window.addEventListener('resize', eventHandler, false)
 }
-
-
 window.document.addEventListener('DOMContentLoaded', size(), false);
-
-// load size
 function myfunction() {
   if (screen.width > 675) {
     const x = (screen.width - 300) + "px";
@@ -33,9 +31,14 @@ function myfunction() {
 
 }
 
-myfunction()
+document.addEventListener('load', myfunction())
 
 
-document.addEventListener('click', function() {
-   
-})
+
+// navigation btn changes
+
+function btnproduct() {
+
+  var btnproduct = document.getElementById('nav-product').classList.toggle('nav-show');
+  console.log('btn work product')
+}
