@@ -35,10 +35,69 @@ document.addEventListener('load', myfunction())
 
 
 
-// navigation btn changes
+// navigation link setup
 
 function btnproduct() {
-
+ 
   var btnproduct = document.getElementById('nav-product').classList.toggle('nav-show');
-  console.log('btn work product')
+   
+  arrowlightrotator0()
+
+ 
+}
+
+
+function btncompany() {
+ 
+  var btnproduct = document.getElementById('nav-company').classList.toggle('nav-show');
+   
+  arrowlightrotator1()
+
+ 
+}
+
+function btnconnect() {
+ 
+  var btnproduct = document.getElementById('nav-connect').classList.toggle('nav-show');
+   
+  arrowlightrotator2()
+
+ 
+}
+
+
+// arrow light rotator function
+function arrowlightrotator0() {
+  var check = document.getElementsByClassName('dropdown')[0];
+  var btnrotator = check.className.includes('nav-show')
+
+  if (btnrotator === true) {
+    document.getElementsByClassName("arrow-light")[0].style.transform = "rotate(180deg)"; 
+  } 
+  else if (btnrotator === false) {
+    document.getElementsByClassName("arrow-light")[0].style.transform = "rotate(0deg)"; 
+  } 
+}
+
+function arrowlightrotator1() {
+  var check = document.getElementsByClassName('dropdown')[1];
+  var btnrotator = check.className.includes('nav-show')
+
+  if (btnrotator === true) {
+    document.getElementsByClassName("arrow-light")[1].style.transform = "rotate(180deg)"; 
+  } 
+  else if (btnrotator === false) {
+    document.getElementsByClassName("arrow-light")[1].style.transform = "rotate(0deg)"; 
+  } 
+}
+function arrowlightrotator2() {
+  var check = document.getElementsByClassName('dropdown')[2];
+  var btnrotator = check.className.includes('nav-show')
+
+  if (btnrotator === true) {
+    document.getElementsByClassName("arrow-light")[2].style.transform = "rotate(180deg)"; 
+  } 
+  else if (btnrotator === false) {
+    document.getElementsByClassName("arrow-light")[2].style.transform = "rotate(0deg)"; 
+  } 
 }

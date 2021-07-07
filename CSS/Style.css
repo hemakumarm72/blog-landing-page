@@ -129,7 +129,7 @@ nav a:hover {
 }
 
 nav a:hover .arrow-light {
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
 }
 
 .nav-btn {
