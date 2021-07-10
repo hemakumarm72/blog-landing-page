@@ -123,9 +123,6 @@ nav a:hover {
   color: var(--White);
 }
 
-nav a:hover .arrow-light {
-  /* transform: rotate(180deg); */
-}
 .arrow-rotator {
   transform: rotate(180deg);
 }
@@ -171,8 +168,6 @@ nav a:hover .arrow-light {
   transition: 200ms ease;
 }
 
-.dropdown li ul {
-}
 .dropdown ul {
   display: flex;
 
@@ -203,12 +198,12 @@ nav a:hover .arrow-light {
   filter: alpha(opacity=100);
 }
 
-/* media quiers*/
+.hamber {
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
 @media (max-width: 1280px) {
-  .header {
-    /* background-position: -35.75vh -104.375vw; */
-  }
-
   .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -226,7 +221,16 @@ nav a:hover .arrow-light {
   }
 }
 
-@media (min-width: 300px) and (max-width: 675px) {
+@media (max-width: 1000px) {
+  .hamber {
+    visibility: visible;
+  }
+  .navigation-sub {
+    display: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 675px) {
   .header-container {
     height: 37.5625rem;
   }
@@ -243,8 +247,15 @@ nav a:hover .arrow-light {
     width: 87.5%;
   }
   .navigation {
-    margin-top: 3.5625vh;
+    padding-top: 3.5rem;
+    border: 3px green solid;
   }
-  .logo {
+  .button-container {
+    display: none;
+  }
+  .humber {
+    display: block;
+    visibility: visible;
+    border: 3px yellowgreen solid;
   }
 }
