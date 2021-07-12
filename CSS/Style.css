@@ -4,7 +4,6 @@
 
 html,
 body {
-  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -165,10 +164,6 @@ nav a:hover {
 }
 
 @media (max-width: 1440px) {
-  .header {
-    background-size: 200vw;
-  }
-
   .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -179,23 +174,28 @@ nav a:hover {
   .hamber {
     visibility: visible;
   }
-  .navigation-sub {
+  .destop_navigation {
     display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .humber {
+    display: block;
+    visibility: visible;
   }
 }
 
-@media (min-width: 0px) and (max-width: 675px) {
+@media (max-width: 675px) {
   .header-container {
     height: 37.5625rem;
   }
   .header {
-    background-attachment: fixed;
+    background-position: -70vh -40vh;
+    background-size: 240vh 200vh;
 
-    background-position: -50.75vw -15.375vw;
-    background-size: 250vw;
     border-radius: 0 0 0 100px;
   }
-
   .container {
     margin: 0 auto;
     width: 87.5%;
@@ -206,10 +206,5 @@ nav a:hover {
   }
   .button-container {
     display: none;
-  }
-  .humber {
-    display: block;
-    visibility: visible;
-    border: 3px yellowgreen solid;
   }
 }
