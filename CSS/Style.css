@@ -48,10 +48,13 @@ body {
   font-family: var(--font-ubuntu);
   font-weight: 300;
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
 }
 
+.navigation .logo-section {
+  align-items: center;
+}
 nav ul {
   display: flex;
   list-style-type: none;
@@ -174,7 +177,7 @@ nav a:hover {
   .hamber {
     visibility: visible;
   }
-  .destop_navigation {
+  .destop_navigation_bar {
     display: none;
   }
   .nav-btn {
