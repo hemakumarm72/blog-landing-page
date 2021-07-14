@@ -104,8 +104,9 @@ nav ul li a {
   color: var(--textWhite);
   font-size: 1vw;
 }
+
 .arrow-light {
-  transition: 0.3s ease-in;
+  transition: transform 0.3s ease-in-out;
 }
 
 nav a:hover {
@@ -218,6 +219,7 @@ nav a:hover {
   }
 
   .navigation_bar {
+    visibility: hidden;
     border-radius: 0.5rem;
     margin-top: 4.111111111111111vh;
     background-color: var(--White);
@@ -256,7 +258,7 @@ nav a:hover {
     transition: none;
     box-shadow: 0 0 0 0;
     /* padding: 1.8125rem 0; */
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
     margin-left: 0;
     margin-top: -35px;
     -webkit-transform: translateY(-50px);
@@ -267,7 +269,7 @@ nav a:hover {
   .dropdown ul {
   }
   .dropdown ul li {
-    padding: 1rem 0;
+    padding: 1.3rem 0;
   }
   .dropdown ul li a {
     font-size: 1.1rem;
@@ -281,6 +283,9 @@ nav a:hover {
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transform: translateY(50px);
     -moz-transform: translateY(50px);
+  }
+  .navigation_bar.show {
+    visibility: visible;
   }
 }
 

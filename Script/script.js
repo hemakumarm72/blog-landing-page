@@ -57,12 +57,13 @@ function btnconnect() {
 
 function btnclose() {
   humberclick.classList.toggle("is-active")
+  navigation_bar.classList.toggle("show")
 }
 const linkproduct = document.getElementById("link-product")
 const linkcompany = document.getElementById("link-company")
 const linkconnect = document.getElementById("link-connect")
 const atag = document.getElementsByTagName("A")
-
+const navigation_bar = document.getElementsByClassName("navigation_bar")[0]
 const product = document.getElementById("nav-product")
 const company = document.getElementById("nav-company")
 const connect = document.getElementById("nav-connect")
