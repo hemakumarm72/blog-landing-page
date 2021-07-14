@@ -56,18 +56,6 @@ function btnconnect() {
     .getElementById("arrowrotator-connect")
     .classList.toggle("arrow-rotator")
 }
-
-function btnclose() {
-  const humber = document.querySelector(".hamber")
-  const attributedread = humber.getAttribute("src")
-
-  if (attributedread == "/images/icon-hamburger.svg") {
-    humber.setAttribute("src", "/images/icon-close.svg")
-  } else {
-    humber.setAttribute("src", "/images/icon-hamburger.svg")
-  }
-}
-
 const linkproduct = document.getElementById("link-product")
 const linkcompany = document.getElementById("link-company")
 const linkconnect = document.getElementById("link-connect")
@@ -77,7 +65,12 @@ const product = document.getElementById("nav-product")
 const company = document.getElementById("nav-company")
 const connect = document.getElementById("nav-connect")
 const dropdown = document.getElementsByClassName("dropdown")
-const humberclick = document.getElementById("openhumber")
+const humberclick = document.getElementById("humburger-1")
+
+function btnclose() {
+  humberclick.classList.toggle("is-active")
+}
+
 linkproduct.onclick = function () {
   btnproduct()
 }
