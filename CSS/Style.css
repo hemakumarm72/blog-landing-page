@@ -184,7 +184,7 @@ nav a:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-.mobile-button-container {
+.mobile_button {
   display: none;
 }
 /*mobile navigation*/
@@ -230,6 +230,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 1.3125rem 0;
   }
 
   .navigation_bar ul li {
@@ -287,10 +288,40 @@ nav a:hover {
     visibility: visible;
   }
 
-  .mobile-button-container {
-    border: 3px red solid;
-    position: relative;
+  .mobile_button {
+    font-family: var(--font-overpass);
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 5.875rem;
   }
+
+  .nav-btn {
+    border-radius: 5rem;
+    padding: 1.125rem 2.5625vw;
+    font-size: 1rem;
+
+    color: var(--Very-dark-black-blue);
+  }
+  .btn-login:hover {
+    color: var(--White);
+    background-color: var(--textWhite);
+  }
+  .btn-signup {
+    color: var(--White);
+    background-image: linear-gradient(
+      to right,
+      var(--very-light-red),
+      var(--Light-red)
+    );
+  }
+
+  .btn-signup:hover {
+    background-image: none;
+    color: var(--Very-dark-black-blue);
+    background-color: var(--textWhite);
+  }
+
   .bordercolor {
     margin: 1.4375rem 1.5rem;
     border: 0.2px var(--textWhite) solid;
