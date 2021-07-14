@@ -218,12 +218,22 @@ nav a:hover {
   }
 
   .navigation_bar {
+    opacity: 1;
     visibility: hidden;
     border-radius: 0.5rem;
     margin-top: 4.111111111111111vh;
     background-color: var(--White);
 
     box-shadow: 0 0 55px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navigation_bar.show {
+    visibility: visible;
+    opacity: 1;
   }
 
   .navigation_bar ul {
@@ -283,9 +293,6 @@ nav a:hover {
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transform: translateY(50px);
     -moz-transform: translateY(50px);
-  }
-  .navigation_bar.show {
-    visibility: visible;
   }
 
   .mobile_button {
