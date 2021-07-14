@@ -1,5 +1,3 @@
-//screen revolution set or max containing auto changing values
-
 var size = function () {
   function eventHandler() {
     if (screen.width > 1000) {
@@ -56,6 +54,10 @@ function btnconnect() {
     .getElementById("arrowrotator-connect")
     .classList.toggle("arrow-rotator")
 }
+
+function btnclose() {
+  humberclick.classList.toggle("is-active")
+}
 const linkproduct = document.getElementById("link-product")
 const linkcompany = document.getElementById("link-company")
 const linkconnect = document.getElementById("link-connect")
@@ -66,10 +68,6 @@ const company = document.getElementById("nav-company")
 const connect = document.getElementById("nav-connect")
 const dropdown = document.getElementsByClassName("dropdown")
 const humberclick = document.getElementById("humburger-1")
-
-function btnclose() {
-  humberclick.classList.toggle("is-active")
-}
 
 linkproduct.onclick = function () {
   btnproduct()
