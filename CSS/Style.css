@@ -300,14 +300,13 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 
-    padding: 2rem 5.875rem;
+    align-items: center;
   }
 
   .nav-btn {
     border-radius: 5rem;
-    padding: 1.125rem 2.5625vw;
+    padding: 1.0625rem 2.5rem;
     font-size: 1rem;
-
     color: var(--Very-dark-black-blue);
   }
   .btn-login:hover {
