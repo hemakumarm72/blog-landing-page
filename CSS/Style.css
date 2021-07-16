@@ -1,7 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
 
 @import '/CSS/variables.css';
-@import '/CSS/font.css';
+
 html,
 body {
   scroll-behavior: smooth;
@@ -181,7 +181,7 @@ nav a:hover {
   font-weight: 600;
 }
 
-.nav-show {
+.open {
   visibility: visible;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -287,7 +287,7 @@ nav a:hover {
     font-size: 1.1rem;
   }
 
-  .nav-show {
+  .open {
     position: relative;
     transform: translateY(10%);
     transition: all 0.3s ease-in-out;
