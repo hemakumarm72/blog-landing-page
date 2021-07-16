@@ -45,7 +45,14 @@ const arrowproduct = document.getElementById('arrowrotator-product');
 const arrowcompany = document.getElementById('arrowrotator-company');
 const arrowconnect = document.getElementById('arrowrotator-connect');
 
-function btndropdownset(dropdownset, arrowset, elsetype1, elsetype2) {
+function btndropdownset(
+  dropdownset,
+  arrowset,
+  elsedrop1,
+  elsedrop2,
+  elsearrow1,
+  elsearrow2
+) {
   if (dropdownset.classList.contains('close')) {
     dropdownset.classList.remove('close');
     dropdownset.classList.toggle('open');
@@ -54,12 +61,12 @@ function btndropdownset(dropdownset, arrowset, elsetype1, elsetype2) {
     dropdownset.classList.toggle('close');
   }
 
-  elsetype1.classList.remove('open');
-  elsetype1.classList.add('close');
-  elsetype1.classList.remove('arrow-rotator');
-  elsetype2.classList.remove('open');
-  elsetype2.classList.add('close');
-  elsetype2.classList.remove('arrow-rotator');
+  elsedrop1.classList.remove('open');
+  elsedrop1.classList.add('close');
+  elsearrow1.classList.remove('arrow-rotator');
+  elsedrop2.classList.remove('open');
+  elsedrop2.classList.add('close');
+  elsearrow2.classList.remove('arrow-rotator');
 
   arrowset.classList.toggle('arrow-rotator');
 }
@@ -70,15 +77,42 @@ function humberclose_open() {
 }
 
 linkproduct.onclick = function () {
-  btndropdownset(product, arrowproduct, company, connect);
+  btndropdownset(
+    product,
+    arrowproduct,
+    company,
+    connect,
+    arrowcompany,
+    arrowconnect
+  );
+  company.classList.remove('open');
+  company.classList.add('close');
+  arrowcompany.classList.remove('arrow-rotator');
+  connect.classList.remove('open');
+  connect.classList.add('close');
+  arrowconnect.classList.remove('arrow-rotator');
 };
 
 linkcompany.onclick = function () {
-  btndropdownset(company, arrowcompany, product, connect);
+  btndropdownset(
+    company,
+    arrowcompany,
+    product,
+    connect,
+    arrowproduct,
+    arrowconnect
+  );
 };
 
 linkconnect.onclick = function () {
-  btndropdownset(connect, arrowconnect, product, company);
+  btndropdownset(
+    connect,
+    arrowconnect,
+    product,
+    company,
+    arrowproduct,
+    arrowcompany
+  );
 };
 
 humberclick.onclick = function () {
