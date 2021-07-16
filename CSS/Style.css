@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap'); */
 
 @import '/CSS/variables.css';
-
+@import '/CSS/font.css';
 html,
 body {
   scroll-behavior: smooth;
@@ -34,6 +34,8 @@ body {
   background-size: 200vw;
   width: 100%;
   height: 100%;
+
+  /* aspect-ratio: attr(width) / attr(height); */
 }
 
 .container {
@@ -310,9 +312,14 @@ nav a:hover {
     font-size: 1rem;
     color: var(--Very-dark-black-blue);
   }
+
   .btn-login:hover {
     color: var(--White);
-    background-color: var(--textWhite);
+    background-image: linear-gradient(
+      to right,
+      var(--very-light-red),
+      var(--Light-red)
+    );
   }
   .btn-signup {
     color: var(--White);
@@ -324,9 +331,9 @@ nav a:hover {
   }
 
   .btn-signup:hover {
-    background-image: none;
-    color: var(--Very-dark-black-blue);
-    background-color: var(--textWhite);
+    /* color: var(--Very-dark-black-blue); */
+
+    opacity: 0.5;
   }
 
   .bordercolor {
