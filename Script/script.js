@@ -45,7 +45,7 @@ const arrowproduct = document.getElementById('arrowrotator-product');
 const arrowcompany = document.getElementById('arrowrotator-company');
 const arrowconnect = document.getElementById('arrowrotator-connect');
 
-function btndropdownset(dropdownset, arrowset) {
+function btndropdownset(dropdownset, arrowset, elsetype1, elsetype2) {
   if (dropdownset.classList.contains('close')) {
     dropdownset.classList.remove('close');
     dropdownset.classList.toggle('open');
@@ -53,6 +53,13 @@ function btndropdownset(dropdownset, arrowset) {
     dropdownset.classList.remove('open');
     dropdownset.classList.toggle('close');
   }
+
+  elsetype1.classList.remove('open');
+  elsetype1.classList.add('close');
+  elsetype1.classList.remove('arrow-rotator');
+  elsetype2.classList.remove('open');
+  elsetype2.classList.add('close');
+  elsetype2.classList.remove('arrow-rotator');
 
   arrowset.classList.toggle('arrow-rotator');
 }
@@ -63,21 +70,15 @@ function humberclose_open() {
 }
 
 linkproduct.onclick = function () {
-  btndropdownset(product, arrowproduct);
-  company.classList.remove('open');
-  company.classList.add('close');
-  connect.classList.remove('open');
-  connect.classList.add('close');
-  arrowcompany.classList.remove('arrow-rotator');
-  arrowconnect.classList.remove('arrow-rotator');
+  btndropdownset(product, arrowproduct, company, connect);
 };
 
 linkcompany.onclick = function () {
-  btndropdownset(company, arrowcompany);
+  btndropdownset(company, arrowcompany, product, connect);
 };
 
 linkconnect.onclick = function () {
-  btndropdownset(connect, arrowconnect);
+  btndropdownset(connect, arrowconnect, product, company);
 };
 
 humberclick.onclick = function () {
