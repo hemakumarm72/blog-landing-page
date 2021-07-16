@@ -29,6 +29,7 @@ function myfunction() {
 document.addEventListener('load', myfunction());
 
 // navigation link setup
+//loader
 const linkproduct = document.getElementById('link-product');
 const linkcompany = document.getElementById('link-company');
 const linkconnect = document.getElementById('link-connect');
@@ -44,42 +45,17 @@ const arrowproduct = document.getElementById('arrowrotator-product');
 const arrowcompany = document.getElementById('arrowrotator-company');
 const arrowconnect = document.getElementById('arrowrotator-connect');
 
-function btnproduct() {
-  if (product.classList.contains('close')) {
-    product.classList.remove('close');
-    product.classList.toggle('open');
-  } else if (product.classList.contains('open')) {
-    product.classList.remove('open');
-    product.classList.toggle('close');
+function btndropdownset(dropdownset, arrowset) {
+  if (dropdownset.classList.contains('close')) {
+    dropdownset.classList.remove('close');
+    dropdownset.classList.toggle('open');
+    
+  } else if (dropdownset.classList.contains('open')) {
+    dropdownset.classList.remove('open');
+    dropdownset.classList.toggle('close');
   }
 
-  // arrow image rototation
-
-  arrowproduct.classList.toggle('arrow-rotator');
-}
-
-function btncompany() {
-  if (company.classList.contains('close')) {
-    company.classList.remove('close');
-    company.classList.toggle('open');
-  } else if (company.classList.contains('open')) {
-    company.classList.remove('open');
-    company.classList.toggle('close');
-  }
-
-  arrowcompany.classList.toggle('arrow-rotator');
-}
-
-function btnconnect() {
-  if (connect.classList.contains('close')) {
-    connect.classList.remove('close');
-    connect.classList.toggle('open');
-  } else if (connect.classList.contains('open')) {
-    connect.classList.remove('open');
-    connect.classList.toggle('close');
-  }
-
-  arrowconnect.classList.toggle('arrow-rotator');
+  arrowset.classList.toggle('arrow-rotator');
 }
 
 function humberclose_open() {
@@ -88,15 +64,15 @@ function humberclose_open() {
 }
 
 linkproduct.onclick = function () {
-  btnproduct();
+  btndropdownset(product, arrowproduct);
 };
 
 linkcompany.onclick = function () {
-  btncompany();
+  btndropdownset(company, arrowcompany);
 };
 
 linkconnect.onclick = function () {
-  btnconnect();
+  btndropdownset(connect, arrowconnect);
 };
 
 humberclick.onclick = function () {
