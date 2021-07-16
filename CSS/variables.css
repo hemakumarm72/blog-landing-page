@@ -46,3 +46,8 @@
   --font-overpass: 'Overpass', sans-serif;
   --font-ubuntu: 'Ubuntu', sans-serif;
 }
+
+html,
+body {
+  scroll-behavior: smooth;
+}

@@ -1,9 +1,6 @@
 @import '/CSS/variables.css';
 
-html,
-body {
-  scroll-behavior: smooth;
-}
+
 
 .header-container {
   margin: 0 auto;

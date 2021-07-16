@@ -49,7 +49,6 @@ function btndropdownset(dropdownset, arrowset) {
   if (dropdownset.classList.contains('close')) {
     dropdownset.classList.remove('close');
     dropdownset.classList.toggle('open');
-    
   } else if (dropdownset.classList.contains('open')) {
     dropdownset.classList.remove('open');
     dropdownset.classList.toggle('close');
@@ -65,6 +64,12 @@ function humberclose_open() {
 
 linkproduct.onclick = function () {
   btndropdownset(product, arrowproduct);
+  company.classList.remove('open');
+  company.classList.add('close');
+  connect.classList.remove('open');
+  connect.classList.add('close');
+  arrowcompany.classList.remove('arrow-rotator');
+  arrowconnect.classList.remove('arrow-rotator');
 };
 
 linkcompany.onclick = function () {
