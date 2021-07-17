@@ -285,6 +285,7 @@ nav a:hover {
   .dropdown.open {
     position: relative;
     visibility: visible;
+    height: fit-content;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -295,6 +296,7 @@ nav a:hover {
 
   .dropdown.close {
     transition: all 0.3s ease-in-out;
+    position: relative;
     height: 0;
     padding: 0;
     visibility: hidden;
