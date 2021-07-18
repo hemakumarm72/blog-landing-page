@@ -131,6 +131,7 @@ nav a:hover {
 }
 
 .dropdown {
+  position: absolute;
   visibility: hidden;
   margin-left: -2.1875vw;
   padding: 20px 0;
@@ -177,6 +178,58 @@ nav a:hover {
 .mobile_button {
   display: none;
 }
+
+.header_text {
+  position: relative;
+
+  margin-top: 8.6875vw;
+  font-size: 3.1875rem;
+  color: var(--White);
+  font-family: var(--font-overpass);
+  text-align: center;
+}
+.header_text:nth-child(2) {
+  line-height: 1.6875rem;
+  font-size: 1rem;
+  margin-top: 0;
+}
+.button_container {
+  margin-top: 3.125rem;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.textbtn {
+  font-family: var(--font-overpass);
+  margin: 0 15px;
+  padding: 1.125rem 1.4375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  color: var(--White);
+  background-color: transparent;
+}
+
+.btn1 {
+  background-color: var(--White);
+  color: var(--Light-red);
+}
+
+.btn2 {
+  border: 0.8px var(--White) solid;
+}
+
+.btn1:hover {
+  color: var(--White);
+  background-color: transparent;
+  border: 0.8px var(--White) solid;
+}
+.btn2:hover {
+  background-color: var(--White);
+  color: var(--Light-red);
+}
 /*mobile navigation*/
 
 @media (max-width: 1280px) {
@@ -213,6 +266,7 @@ nav a:hover {
   }
 
   .navigation_bar {
+    /* position: absolute; */
     opacity: 1;
     visibility: hidden;
     border-radius: 0.5rem;
@@ -261,6 +315,8 @@ nav a:hover {
     padding-bottom: 3px;
   }
   .dropdown {
+    position: relative;
+
     /* transition: all 0.3s ease-in-out; */
     box-shadow: 0 0 0 0;
     /* padding: 1.8125rem 0; */
@@ -357,13 +413,20 @@ nav a:hover {
     height: 37.5625rem;
   }
   .header {
-    background-position: -70vh -40vh;
-    background-size: 240vh 200vh;
+    background-position: -20rem -30rem;
+    background-size: 90rem 100rem;
 
     border-radius: 0 0 0 100px;
   }
   .container {
     margin: 0 auto;
     width: 87.5%;
+  }
+  .textinner {
+    border: 3px green solid;
+    position: absolute;
+  }
+  .header_text {
+    border: 3px red solid;
   }
 }
