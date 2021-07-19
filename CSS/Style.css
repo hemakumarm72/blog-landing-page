@@ -132,6 +132,7 @@ nav a:hover {
 
 .dropdown {
   position: absolute;
+  z-index: 1;
   visibility: hidden;
   margin-left: -2.1875vw;
   padding: 20px 0;
@@ -178,14 +179,16 @@ nav a:hover {
 .mobile_button {
   display: none;
 }
+.textinner {
+  position: relative;
+  margin-top: 8.6875vw;
+  font-family: var(--font-overpass);
+}
 
 .header_text {
-  position: relative;
-
-  margin-top: 8.6875vw;
   font-size: 3.1875rem;
   color: var(--White);
-  font-family: var(--font-overpass);
+
   text-align: center;
 }
 .header_text:nth-child(2) {
@@ -266,7 +269,9 @@ nav a:hover {
   }
 
   .navigation_bar {
-    /* position: absolute; */
+    position: absolute;
+    width: 100%;
+    z-index: 1;
     opacity: 1;
     visibility: hidden;
     border-radius: 0.5rem;
@@ -406,6 +411,37 @@ nav a:hover {
   .button-container {
     display: none;
   }
+
+  /* .textinner {
+    margin-top: 7.5rem;
+  }
+  .header_text {
+    font-size: 1.9rem;
+  } */
+  .textinner {
+    position: relative;
+    margin-top: 2.6875vw;
+    font-family: var(--font-overpass);
+  }
+
+  .header_text {
+    font-size: 4.1875vw;
+    color: var(--White);
+
+    text-align: center;
+  }
+  .header_text:nth-child(2) {
+    line-height: 1.6875vw;
+    font-size: 1.5vw;
+    margin-top: 0;
+  }
+  .button_container {
+    margin-top: 3.125vw;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+  }
 }
 
 @media (max-width: 675px) {
@@ -423,10 +459,42 @@ nav a:hover {
     width: 87.5%;
   }
   .textinner {
-    border: 3px green solid;
+    position: relative;
+    margin: 7.25rem 2.6875rem;
+
     position: absolute;
   }
   .header_text {
-    border: 3px red solid;
+    display: block;
+    padding-bottom: 0.8rem;
+
+    font-size: 1.9rem;
+  }
+  .header_text span {
+    display: block;
+  }
+
+  .header_text:nth-child(2) {
+    font-size: 1rem;
+    margin-top: 0;
+    line-height: 1.5rem;
+  }
+
+  .header_text:nth-child(2) span {
+    display: block;
+  }
+
+  .button_container {
+    margin-top: 2.125rem;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+  }
+  .textbtn {
+    margin: 0 15px;
+    padding: 1.125rem 1.4375rem;
+    font-size: 1rem;
+    font-weight: 600;
   }
 }
