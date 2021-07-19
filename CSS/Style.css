@@ -180,7 +180,6 @@ nav a:hover {
   display: none;
 }
 .textinner {
-  position: relative;
   margin-top: 8.6875vw;
   font-family: var(--font-overpass);
 }
