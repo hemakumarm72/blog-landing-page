@@ -462,6 +462,7 @@ nav a:hover {
     margin: 7.25rem 2.6875rem;
 
     position: absolute;
+    border: 3px red solid;
   }
   .header_text {
     display: block;
@@ -492,8 +493,8 @@ nav a:hover {
   }
   .textbtn {
     margin: 0 15px;
-    padding: 1.125rem 1.4375rem;
-    font-size: 1rem;
+    padding: 1.0625rem 1.0625rem;
+    font-size: 0.7rem;
     font-weight: 600;
   }
 }
