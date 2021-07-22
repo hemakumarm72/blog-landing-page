@@ -1,6 +1,6 @@
 # Frontend Mentor - Blogr landing page
 
-# https://agitated-almeida-3fadb9.netlify.app/
+# https://silly-sinoussi-0edded.netlify.app
 
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
 
