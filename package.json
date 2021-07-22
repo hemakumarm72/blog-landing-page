@@ -1,0 +1,23 @@
+{
+  "name": "blog-landing-page",
+  "version": "1.0.0",
+  "description": "# https://agitated-almeida-3fadb9.netlify.app/",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemakumarm72/blog-landing-page.git"
+  },
+  "author": "HEMAKUMAR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hemakumarm72/blog-landing-page/issues"
+  },
+  "homepage": "https://github.com/hemakumarm72/blog-landing-page#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

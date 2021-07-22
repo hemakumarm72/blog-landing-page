@@ -1,2 +1,4 @@
 .vscode
 context.bin
+node_modules
+
