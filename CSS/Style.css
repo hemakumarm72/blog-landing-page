@@ -458,8 +458,7 @@ nav a:hover {
     width: 87.5%;
   }
   .textinner {
-    position: relative;
-    margin: 7.25rem 2.6875rem;
+    margin: 7.25rem 20.6875vw;
 
     position: absolute;
   }
