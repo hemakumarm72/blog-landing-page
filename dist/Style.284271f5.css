@@ -299,7 +299,7 @@ nav a:hover {
 .features_titles {
   position: absolute;
   margin: 10% 40%;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -341,7 +341,6 @@ nav a:hover {
   background-image: url('/bg-pattern-circles.7ab6f122.svg');
   background-color: var(--Very-dark-black-blue);
   height: 25.0625rem;
-
   border-radius: 0 100px 0 100px;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -353,7 +352,8 @@ nav a:hover {
   background-repeat: no-repeat;
 
   margin-top: -5rem;
-  margin-left: 5.1rem;
+
+  margin: 0 auto;
 }
 .state_infra_text {
   margin: 7.5625rem 0;
