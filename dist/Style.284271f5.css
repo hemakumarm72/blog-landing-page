@@ -25,6 +25,7 @@
 
   --White: hsl(0, 0%, 100%); /*(text)*/
   --textWhite: hsl(0, 0%, 100%); /*(text)*/
+  --contentcolor: rgba(250, 250, 250);
   --hoverwhite: hsla(0, 0%, 100%, 0.294); /*(text)*/
   --Grayish-blue: hsl(240, 2%, 79%); /*(footer text)*/
   --Very-dark-grayish-blue: hsl(207, 13%, 34%); /* (body copy)*/
@@ -285,22 +286,51 @@ nav a:hover {
 }
 
 .features {
- 
-  background-color: var(--White);
+  background-color: var(--contentcolor);
   font-family: var(--font-overpass);
+  height: 110vh;
 }
 
 .features h1 {
   color: var(--Very-dark-blue);
 }
 
-.future_image {
-  background-image: url('/illustration-editor-desktop.530e9239.svg');
-  position: relative;
-  border: 3px red solid;
-  height: 100px;
+.features_titles {
+  position: absolute;
+  margin: 10% 40%;
+  font-size: 2rem;
+  text-align: center;
+}
 
-  background-position-x: 12rem;
+.features_block {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.features_card {
+  margin: 35vh auto;
+}
+.title_future {
+  font-size: 1.8125rem;
+  margin-bottom: 2.1875rem;
+}
+
+.future_editor p,
+.future_robust p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--Very-dark-grayish-blue);
+  margin-bottom: 3.375rem;
+}
+
+.future_image {
+  position: relative;
+
+  background-image: url('/illustration-editor-desktop.530e9239.svg');
+
+  background-size: 100%;
+
+  background-position-x: 15rem;
+  background-position-y: 5rem;
   background-repeat: no-repeat;
 }
 /*mobile navigation*/
