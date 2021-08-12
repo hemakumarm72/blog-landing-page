@@ -334,6 +334,21 @@ nav a:hover {
   background-position-y: 5rem;
   background-repeat: no-repeat;
 }
+
+.state_infra {
+  height: 25.0625rem;
+  background-color: var(--Very-dark-black-blue);
+  border-radius: 0 100px 0 100px;
+}
+.phone_illstration {
+  background-repeat: no-repeat;
+
+  z-index: 1;
+
+  margin-top: -5rem;
+  margin-left: 5.1rem;
+}
+
 /*mobile navigation*/
 
 @media (max-width: 1280px) {
