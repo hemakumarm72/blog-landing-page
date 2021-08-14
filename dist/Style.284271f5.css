@@ -383,6 +383,7 @@ nav a:hover {
   background-image: url('/illustration-laptop-desktop.92ecfef9.svg');
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position-x: -15.4rem;
 }
 
 .desktopsectiontext {
