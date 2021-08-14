@@ -277,7 +277,8 @@ nav a:hover {
   background-image: url('../images/illustration-editor-desktop.svg');
 
   background-size: 100%;
-
+  width: auto;
+  height: auto;
   background-position-x: 15rem;
   background-position-y: 5rem;
   background-repeat: no-repeat;
@@ -295,6 +296,8 @@ nav a:hover {
   background-position: -23vw -60vw;
   display: grid;
   grid-template-columns: 45% 50%;
+  width: auto;
+  height: auto;
 }
 .phone_illstration {
   background-repeat: no-repeat;
@@ -330,6 +333,8 @@ nav a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-x: -15.4rem;
+  width: auto;
+  height: auto;
 }
 
 .desktopsectiontext {
@@ -468,6 +473,8 @@ footer section {
     background-image: url('/images/icon-arrow-dark.svg');
     background-repeat: no-repeat;
     padding-bottom: 3px;
+    width: auto;
+    height: auto;
   }
   .dropdown {
     position: relative;
