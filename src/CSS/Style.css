@@ -277,7 +277,7 @@ nav a:hover {
   background-image: url('../images/illustration-editor-desktop.svg');
 
   background-size: 100%;
-  width: auto;
+  max-width: 100%;
   height: auto;
   background-position-x: 15rem;
   background-position-y: 5rem;
@@ -296,7 +296,7 @@ nav a:hover {
   background-position: -23vw -60vw;
   display: grid;
   grid-template-columns: 45% 50%;
-  width: auto;
+  max-width: 100%;
   height: auto;
 }
 .phone_illstration {
@@ -333,7 +333,7 @@ nav a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-x: -15.4rem;
-  width: auto;
+  max-width: 100%;
   height: auto;
 }
 
@@ -388,6 +388,7 @@ footer section {
   cursor: pointer;
   color: var(--Grayish-blue);
 }
+
 /*mobile navigation*/
 
 @media (max-width: 1280px) {
@@ -473,7 +474,7 @@ footer section {
     background-image: url('/images/icon-arrow-dark.svg');
     background-repeat: no-repeat;
     padding-bottom: 3px;
-    width: auto;
+    max-width: 100%;
     height: auto;
   }
   .dropdown {
