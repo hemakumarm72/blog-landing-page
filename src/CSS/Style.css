@@ -90,7 +90,7 @@ nav ul li a {
   padding: 0 4.0625vw 0 0;
   cursor: pointer;
   text-decoration: none;
-  color: var(--textWhite);
+  color: var(--White);
   font-size: 1vw;
 }
 
@@ -111,7 +111,7 @@ nav a:hover {
   padding: 1.125vw 2.5625vw;
   font-size: 1vw;
   font-weight: 600;
-  color: var(--textWhite);
+  color: var(--White);
   background-color: transparent;
 }
 
@@ -335,7 +335,13 @@ nav a:hover {
 .desktopsectiontext {
   margin: 11.75rem 0;
 }
+footer {
+  height: 22.5rem;
+  background-color: var(--Very-dark-black-blue);
+}
 
+.footerlink article h1 {
+}
 /*mobile navigation*/
 
 @media (max-width: 1280px) {
@@ -433,7 +439,7 @@ nav a:hover {
     margin-bottom: 30px;
     margin-top: -35px;
 
-    background-color: var(--textWhite);
+    background-color: var(--White);
   }
 
   .dropdown ul {
@@ -509,7 +515,7 @@ nav a:hover {
 
   .bordercolor {
     margin: 0 1.5rem;
-    border: 0.2px var(--textWhite) solid;
+    border: 0.2px var(--White) solid;
   }
   .button-container {
     display: none;
