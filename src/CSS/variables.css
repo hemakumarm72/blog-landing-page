@@ -24,7 +24,7 @@
   /* ### Neutral */
 
   --White: hsl(0, 0%, 100%); /*(text)*/
-  --textWhite: hsl(0, 0%, 100%); /*(text)*/
+
   --contentcolor: rgba(250, 250, 250);
   --hoverwhite: hsla(0, 0%, 100%, 0.294); /*(text)*/
   --Grayish-blue: hsl(240, 2%, 79%); /*(footer text)*/
