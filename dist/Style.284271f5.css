@@ -398,7 +398,7 @@ footer {
 footer section {
   display: grid;
   grid-template-columns: 20% 80%;
-  border: 3px red solid;
+
   padding-top: 4.4375rem;
 }
 
