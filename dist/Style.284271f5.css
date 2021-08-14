@@ -300,7 +300,6 @@ nav a:hover {
   position: absolute;
   margin: 10% 40%;
   font-size: 1.8rem;
-  text-align: center;
 }
 
 .features_block {
@@ -707,6 +706,12 @@ footer section {
     padding: 1.0625rem 1.0625rem;
     font-size: 3vw;
     font-weight: 600;
+  }
+  .features {
+    border: 3px red solid;
+  }
+  .features_titles {
+    font-size: 1.4375rem;
   }
 }
 

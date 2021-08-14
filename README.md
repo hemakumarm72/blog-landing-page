@@ -1,5 +1,7 @@
 # Frontend Mentor - Blogr landing page
 
+# parcel-server + cache speedup range (5ms)
+
 # https://silly-sinoussi-0edded.netlify.app
 
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
