@@ -256,17 +256,19 @@ nav a:hover {
 .features_card {
   margin: 35vh auto;
 }
-.title_future {
+.contentsection article h1 {
   font-size: 1.8125rem;
   margin-bottom: 2.1875rem;
+  font-family: var(--font-overpass);
+  color: var(--Very-dark-blue);
 }
 
-.future_editor p,
-.future_robust p {
+.contentsection article p {
   font-size: 1.2rem;
   font-weight: 300;
   color: var(--Very-dark-grayish-blue);
   margin-bottom: 3.375rem;
+  font-family: var(--font-overpass);
 }
 
 .future_image {
@@ -314,6 +316,23 @@ nav a:hover {
   font-weight: 300;
   font-family: var(--font-overpass);
   font-size: 1.2rem;
+}
+.desktopsection {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 7rem 0;
+
+  height: 49.5rem;
+}
+.desktopicon {
+  position: relative;
+  background-image: url('../images/illustration-laptop-desktop.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.desktopsectiontext {
+  margin: 11.75rem 0;
 }
 
 /*mobile navigation*/
