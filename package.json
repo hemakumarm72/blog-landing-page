@@ -1,11 +1,16 @@
 {
   "name": "blog-landing-page",
   "version": "1.0.0",
-  "description": "# https://agitated-almeida-3fadb9.netlify.app/",
-  "main": "index.js",
+  "description": "# https://silly-sinoussi-0edded.netlify.app/",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "clean": "rm -r .parcel-cache",
+    "build": "parcel build src/index.html",
+    "prebuild:simple": "npm run clean",
+    "build:simple": "npm run build -- --no-scope-hoist",
+    "start": "npm run build && npm run serve",
+    "start:simple": "npm run build:simple && npm run serve",
+    "watch": "parcel  src/index.html",
+    "serve": "serve dist"
   },
   "repository": {
     "type": "git",
@@ -18,6 +23,9 @@
   },
   "homepage": "https://github.com/hemakumarm72/blog-landing-page#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.5"
-  }
+    "serve": "^12.0.0",
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "devDependencies": {}
 }
