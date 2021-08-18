@@ -289,7 +289,11 @@ nav a:hover {
 .features {
   background-color: var(--contentcolor);
   font-family: var(--font-overpass);
+}
+
+.block {
   height: 110vh;
+  border: 3px rgb(0, 0, 0) solid;
 }
 
 .features h1 {
@@ -306,7 +310,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.features_card {
+.contentsection {
   margin: 35vh auto;
 }
 .contentsection article h1 {
@@ -335,6 +339,7 @@ nav a:hover {
   background-position-x: 15rem;
   background-position-y: 5rem;
   background-repeat: no-repeat;
+  border: 3px red solid;
 }
 
 .state_infra {
@@ -376,9 +381,6 @@ nav a:hover {
 .desktopsection {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin: 7rem 0;
-
-  height: 49.5rem;
 }
 .desktopicon {
   position: relative;
@@ -388,10 +390,11 @@ nav a:hover {
   background-position-x: -15.4rem;
   max-width: 100%;
   height: auto;
+  margin-top: 4rem;
+  border: 3px red solid;
 }
 
-.desktopsectiontext {
-  margin: 11.75rem 0;
+.desktopicon {
 }
 footer {
   height: 22.5rem;
@@ -412,16 +415,13 @@ footer section {
 
 .footerlink {
   display: flex;
+  justify-content: space-around;
 }
 .footerlink article h1 {
   color: var(--White);
   font-family: var(--font-overpass);
   font-weight: 600;
   font-size: 1.2rem;
-}
-
-.footerlink article {
-  margin: 0 10.9375rem;
 }
 
 .footerlink article ul {
@@ -669,6 +669,9 @@ footer section {
     margin: 0 auto;
     width: 87.5%;
   }
+  .dropdown {
+    background-color: var(--contentcolor);
+  }
   .textinner {
     margin: 7.25rem 2.6875rem;
 
@@ -707,11 +710,35 @@ footer section {
     font-size: 3vw;
     font-weight: 600;
   }
-  .features {
-    border: 3px red solid;
-  }
+
   .features_titles {
     font-size: 1.4375rem;
+  }
+
+  .features_card {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  footer {
+    height: 80.375rem;
+  }
+  footer section {
+    display: grid;
+  }
+  .logosection {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .footerlink {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .footerlink article {
+    margin: 5.125rem 0;
   }
 }
 
