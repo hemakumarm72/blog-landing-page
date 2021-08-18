@@ -394,12 +394,11 @@ nav a:hover {
   border: 3px red solid;
 }
 
-.desktopicon {
-}
 footer {
   height: 22.5rem;
   background-color: var(--Very-dark-black-blue);
   font-family: var(--font-overpass);
+  border-radius: 0 100px 0 0;
 }
 
 footer section {
@@ -722,6 +721,7 @@ footer section {
 
   footer {
     height: 80.375rem;
+    border-radius: 0 100px 0 100px;
   }
   footer section {
     display: grid;
