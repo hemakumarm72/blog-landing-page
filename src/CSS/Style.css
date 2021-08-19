@@ -285,7 +285,7 @@ nav a:hover {
 
 .state_infra {
   background-image: url('../images/bg-pattern-circles.svg');
-  background-color: var(--Very-dark-black-blue);
+  background-color: var(--Very-dark-gray-blue);
   height: 25.0625rem;
   border-radius: 0 100px 0 100px;
   background-repeat: no-repeat;
