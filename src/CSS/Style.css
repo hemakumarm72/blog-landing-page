@@ -239,7 +239,6 @@ nav a:hover {
 
 .block {
   height: 110vh;
-  border: 3px rgb(0, 0, 0) solid;
 }
 
 .features h1 {
@@ -286,12 +285,9 @@ nav a:hover {
   background-position-x: 15rem;
   background-position-y: 5rem;
   background-repeat: no-repeat;
-  border: 3px red solid;
 }
 
 .state_infra {
-  /* background-image: url('../images/bg-pattern-circles.svg'); */
-
   background-image: url('../images/bg-pattern-circles.svg');
   background-color: var(--Very-dark-black-blue);
   height: 25.0625rem;
@@ -306,11 +302,12 @@ nav a:hover {
 }
 .phone_illstration {
   background-repeat: no-repeat;
-
+  position: relative;
   margin: 0 auto;
   margin-top: -5rem;
 }
 .state_infra_text {
+  position: relative;
   margin: 7.5625rem 0;
 }
 
@@ -673,6 +670,35 @@ footer section {
     margin-inline-end: 0px;
     display: block;
   }
+  .state_infra {
+    background-position: -25vw -60vw;
+    background-size: 150%;
+    display: flex;
+    flex-direction: column;
+    height: 39.375rem;
+  }
+  .state_infra_text article h1 {
+    text-align: center;
+  }
+  .state_infra_text article p {
+    text-align: center;
+    line-height: 2rem;
+  }
+  .state_infra_text article p br {
+    display: none;
+  }
+  .phoneicon {
+    position: relative;
+  }
+  .phone_illstration {
+    position: relative;
+    margin-top: -13.5rem;
+    width: 100%;
+  }
+
+  .state_infra_text {
+    margin-top: 2.5625rem;
+  }
 
   .features_card {
     grid-column-start: 1;
@@ -732,6 +758,6 @@ footer section {
     margin: 5.125rem 0;
   }
   .attribution {
-    height: 90px;
+    height: auto;
   }
 }
