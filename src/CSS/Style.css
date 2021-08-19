@@ -668,6 +668,9 @@ footer section {
 
   .features_titles {
     font-size: 1.4375rem;
+    margin-inline-start: 100px;
+    margin-inline-end: 0px;
+    display: block;
   }
 
   .features_card {
@@ -694,7 +697,7 @@ footer section {
   .desktopicon {
     position: absolute;
     background-image: url('../images/illustration-laptop-mobile.svg');
-  background-position-x: 0px;
+    background-position-x: 0px;
     width: 100%;
     height: 500px;
   }
@@ -706,6 +709,7 @@ footer section {
   footer section {
     display: grid;
   }
+
   .logosection {
     grid-column-start: 1;
     grid-column-end: 3;
