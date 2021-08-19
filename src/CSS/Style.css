@@ -237,10 +237,6 @@ nav a:hover {
   font-family: var(--font-overpass);
 }
 
-.block {
-  height: 110vh;
-}
-
 .features h1 {
   color: var(--Very-dark-blue);
 }
@@ -386,7 +382,7 @@ footer section {
 .attribution {
   font-size: 2rem;
   text-align: center;
-  height: 50px;
+  height: auto;
   font-family: var(--font-overpass);
   background-color: orange;
 }
@@ -663,7 +659,9 @@ footer section {
     font-size: 3vw;
     font-weight: 600;
   }
-
+  .contentsection {
+    margin: 0 auto;
+  }
   .features_titles {
     font-size: 1.4375rem;
     margin-inline-start: 90px;
@@ -700,24 +698,34 @@ footer section {
     margin-top: 2.5625rem;
   }
 
+  .features_block {
+    display: flex;
+    flex-direction: column;
+  }
   .features_card {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    order: 2;
+    margin-bottom: 15rem;
   }
   .contentsection {
     text-align: center;
   }
   .future_image {
-    position: absolute;
+    order: 1;
+    position: relative;
     background-image: url('../images/illustration-editor-mobile.svg');
-    height: 500px;
     background-position-x: 0px;
+    width: 100%;
+    height: 21rem;
+
+    background-position-y: 0px;
+    margin-top: 5rem;
   }
 
   .desktopsection {
     display: flex;
     flex-direction: column;
   }
+
   .desktopsection article p br {
     display: none;
   }
@@ -728,11 +736,11 @@ footer section {
     display: block;
   }
   .desktopicon {
-    position: absolute;
+    position: relative;
     background-image: url('../images/illustration-laptop-mobile.svg');
     background-position-x: 0px;
     width: 100%;
-    height: 500px;
+    height: 300px;
   }
 
   footer {
@@ -758,6 +766,6 @@ footer section {
     margin: 5.125rem 0;
   }
   .attribution {
-    height: auto;
+    font-size: 1rem;
   }
 }
