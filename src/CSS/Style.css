@@ -281,6 +281,7 @@ nav a:hover {
 
   background-size: 100%;
   max-width: 100%;
+  width: 100%;
   height: auto;
   background-position-x: 15rem;
   background-position-y: 5rem;
@@ -668,7 +669,7 @@ footer section {
 
   .features_titles {
     font-size: 1.4375rem;
-    margin-inline-start: 100px;
+    margin-inline-start: 90px;
     margin-inline-end: 0px;
     display: block;
   }
@@ -679,6 +680,12 @@ footer section {
   }
   .contentsection {
     text-align: center;
+  }
+  .future_image {
+    position: absolute;
+    background-image: url('../images/illustration-editor-mobile.svg');
+    height: 500px;
+    background-position-x: 0px;
   }
 
   .desktopsection {
