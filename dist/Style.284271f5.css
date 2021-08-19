@@ -434,7 +434,7 @@ footer section {
   color: var(--Grayish-blue);
 }
 .attribution {
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
   height: auto;
   font-family: var(--font-overpass);
