@@ -1,4 +1,58 @@
-@import './variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --Light-red: hsl(356, 100%, 66%); /*-(CTA-text)*/
+  --Very-light-red: hsl(355, 100%, 74%); /*(CTA hover background)*/
+  --Very-dark-blue: hsl(208, 49%, 24%); /*(headings)*/
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%); /*(text)*/
+
+  --contentcolor: rgba(250, 250, 250);
+  --hoverwhite: hsla(0, 0%, 100%, 0.294); /*(text)*/
+  --Grayish-blue: hsl(240, 2%, 79%); /*(footer text)*/
+  --Very-dark-grayish-blue: hsl(207, 13%, 34%); /* (body copy)*/
+  --Very-dark-black-blue: hsl(240, 10%, 16%); /*(footer background)*/
+
+  /* ### Gradient */
+
+  /* Background gradient - Intro/CTA mobile nav: */
+
+  --very-light-red: hsl(13, 100%, 72%);
+  --Light-red: hsl(353, 100%, 62%);
+
+  /* Background gradient - body: */
+
+  --Very-dark-gray-blue: hsl(237, 17%, 21%);
+  --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+  /* ##Typography; */
+  --font-overpass: 'Overpass', sans-serif;
+  --font-ubuntu: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: var(--contentcolor);
+}
 
 .header-container {
   margin: 0 auto;
@@ -16,7 +70,7 @@
 }
 
 .header {
-  background-image: url('../images/bg-pattern-intro.svg');
+  background-image: url('/bg-pattern-intro.6f5cc02a.svg');
   background-repeat: no-repeat;
   z-index: 1;
   background-position: -28.75vw -84.375vw;
@@ -277,7 +331,7 @@ nav a:hover {
 .future_image {
   position: relative;
 
-  background-image: url('../images/illustration-editor-desktop.svg');
+  background-image: url('/illustration-editor-desktop.530e9239.svg');
 
   background-size: 100%;
   max-width: 100%;
@@ -291,7 +345,7 @@ nav a:hover {
 .state_infra {
   /* background-image: url('../images/bg-pattern-circles.svg'); */
 
-  background-image: url('../images/bg-pattern-circles.svg');
+  background-image: url('/bg-pattern-circles.7ab6f122.svg');
   background-color: var(--Very-dark-black-blue);
   height: 25.0625rem;
   border-radius: 0 100px 0 100px;
@@ -330,7 +384,7 @@ nav a:hover {
 }
 .desktopicon {
   position: relative;
-  background-image: url('../images/illustration-laptop-desktop.svg');
+  background-image: url('/illustration-laptop-desktop.92ecfef9.svg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-x: -15.4rem;
@@ -479,7 +533,7 @@ footer section {
 
   .arrow-light-span .arrow-light {
     margin-left: 5px;
-    background-image: url('../images/icon-arrow-dark.svg');
+    background-image: url('/icon-arrow-dark.c50463ee.svg');
     background-repeat: no-repeat;
     padding-bottom: 3px;
     max-width: 100%;
@@ -693,7 +747,7 @@ footer section {
   }
   .desktopicon {
     position: absolute;
-    background-image: url('../images/illustration-laptop-mobile.svg');
+    background-image: url('/illustration-laptop-mobile.04bfc1ce.svg');
   background-position-x: 0px;
     width: 100%;
     height: 500px;
@@ -724,3 +778,6 @@ footer section {
     height: 90px;
   }
 }
+
+
+/*# sourceMappingURL=/Style.284271f5.css.map */
