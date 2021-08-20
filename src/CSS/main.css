@@ -378,7 +378,7 @@ footer section {
   color: var(--Grayish-blue);
 }
 .attribution {
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: center;
   height: auto;
   font-family: var(--font-overpass);
@@ -386,6 +386,7 @@ footer section {
 }
 
 .attribution a {
-  color: white;
+  color: var(--White);
   text-decoration: none;
+  font-weight: bold;
 }
