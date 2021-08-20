@@ -111,6 +111,7 @@ nav a:hover {
   font-weight: 600;
   color: var(--White);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-signup {

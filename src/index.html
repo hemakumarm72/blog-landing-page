@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="title" content="Blog Landing pages Front end mentor task" />
     <meta
       name="description"
@@ -33,7 +33,10 @@
       content="FrontEnd Mentor.com challenges task for Blog 
       Landing Pages of build the parcel server + cache"
     />
-    <meta property="og:image" content="../design/desktop-preview.jpg" />
+    <meta
+      property="og:image"
+      content="https://github.com/hemakumarm72/blog-landing-page/design/desktop-preview.jpg"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary" />
@@ -56,7 +59,10 @@
       content="FrontEnd Mentor.com challenges task for Blog 
       Landing Pages of build the parcel server + cache"
     />
-    <meta property="twitter:image" content="../design/desktop-preview.jpg" />
+    <meta
+      property="twitter:image"
+      content="https://github.com/hemakumarm72/blog-landing-page/design/desktop-preview.jpg"
+    />
     <link rel="canonical" href="https://silly-sinoussi-0edded.netlify.app" />
     <link
       rel="icon"
@@ -212,8 +218,13 @@
               <span class="line_active"> </span>
               <div class="bordercolor"></div>
               <div class="mobile_button">
-                <button class="nav-btn btn-login">Login</button>
-                <button class="nav-btn btn-signup">Sign Up</button>
+                <button class="nav-btn btn-login">
+                  <a href="./pages/login.html"></a>
+                </button>
+
+                <button type="button" class="nav-btn btn-signup">
+                  Sign Up
+                </button>
               </div>
             </nav>
 
